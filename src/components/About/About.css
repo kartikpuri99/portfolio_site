@@ -1,0 +1,27 @@
+
+.about {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding-top: 8.5rem;
+  padding-bottom: 8.5rem;
+  position: relative;
+}
+
+
+
+.about-title {
+  max-width: 57rem;
+}
+
+
+
+.about-maintext {
+  padding: 2rem;
+  font-size: 1.6rem;
+  color: gray;
+}
+
+.about-work {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+}

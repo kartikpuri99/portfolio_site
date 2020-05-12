@@ -1,0 +1,17 @@
+.background-line {
+  width:100%;
+  text-align: center;
+  border-bottom: .1rem solid #000;
+  line-height: 0.1em;
+  margin: 1rem 0 2rem;
+}
+
+.foreground-line{
+  background-color: white;
+  padding: 0 2rem 0 2rem;
+  font-size: 4.5rem
+}
+
+.experience-head{
+  background-color: #F8F9FA;
+}
