@@ -51,7 +51,7 @@ const About = () => {
                 <Heading firstname="About" lastname="Me" />
                 <div className="about-maintext">
                   I am an Electronics and Communication Engineering student at
-                  Bharati Vidyapeeth College Of Engineering. A Full Stack Web
+                  Bharati Vidyapeeth's College Of Engineering. A Full Stack Web
                   developer.I also have interest in machine learning and data
                   science.Apart from programming you will find me playing
                   FIFA,listening music and playing football.<span role="img">⚽⚽</span>
