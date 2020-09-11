@@ -1,5 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Fade } from "react-reveal";
+
 import {
   faFacebook,
   faGithub,
@@ -14,28 +16,30 @@ const Contact = () => {
   return (
     <React.Fragment>
       <section id="contact" className="Contact">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="text-center mx-auto mt-4">
-                <Heading firstname="Get In" lastname="Touch" />
+        <Fade bottom cascade>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="text-center mx-auto mt-4">
+                  <Heading firstname="Get In" lastname="Touch" />
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center mt-4 pt-4">
+              <div className="col-lg-6 col-md-12 col-sm-12">
+                <h1 className="text-center mt-4 text-muted lead contact-text mb-4">
+                  Want to know more about me! Just leave a message or contact me
+                  on one of the platforms.
+                </h1>
+              </div>
+              <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="container contact-form">
+                  <Forms />
+                </div>
               </div>
             </div>
           </div>
-          <div className="row justify-content-center mt-4 pt-4">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <h1 className="text-center mt-4 text-muted lead contact-text mb-4">
-                Want to know more about me! Just leave a message or contact me
-                on one of the platforms.
-              </h1>
-            </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="container contact-form">
-                <Forms />
-              </div>
-            </div>
-          </div>
-        </div>
+        </Fade>
       </section>
       <section id="footer" className="port-footer">
         <div className="container">
