@@ -18,6 +18,15 @@ const edu = [
   }
 ];
 
+const exp = [
+  {
+    name: "Web Administrator at BVPCSI",
+    year: "2020-Present",
+    text:
+      "Works on regularly updating the website as well as adding new feature to the societies website."
+  },
+  
+];
 const Experience = () => {
   return (
     <section id="experience" className="Experience">
@@ -38,7 +47,11 @@ const Experience = () => {
               <Card key={edu.name } year={edu.year} title={edu.name} text={edu.text} />
             ))}
           </div>
-          
+          <div className="col-lg-6 col-md-6 col-sm-12">
+            {exp.map(exp => (
+              <Card key={exp.name } year={exp.year} title={exp.name} text={exp.text} />
+            ))}
+          </div>
         </div>
       </div>
     </section>

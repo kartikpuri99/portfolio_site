@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 // import avatar from "../../assests/photoq.jpg";
-import Typical from "react-typical";
+import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -14,18 +14,18 @@ const Home = () => {
       <section className="home" id="home">
         <div className="home-text container">
           <div className="row justify-content-center">
-            <div className="col-lg-12 home-avatar">
-              &nbsp;
-            </div>
+            <div className="col-lg-12 home-avatar">&nbsp;</div>
           </div>
           <div className="row justify-content-center">
             <div className="home-maintext col-lg-12 text-center mt-4 mx-auto">
               <div className="home-iam ">I Am</div>
               <div className="animationtext">
-                <Typical
-                  steps={["Kartik.", 3000, "Full Stack Developer.", 3000]}
-                  loop={Infinity}
-                  wrapper="p"
+                <Typewriter
+                  options={{
+                    strings: ["Kartik.", "Full Stack Developer."],
+                    autoStart: true,
+                    loop: true,
+                  }}
                 />
               </div>
             </div>
@@ -60,7 +60,6 @@ const Home = () => {
             </div>
           </div>
         </div>
-    
       </section>
     </React.Fragment>
   );

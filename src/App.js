@@ -12,7 +12,28 @@ import Backdrop from "./components/Navigation/Backdrop/Backdrop";
 class App extends Component {
   state = {
     sideDrawerOpen: false,
+    show: false,
   };
+
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        this.setState({
+          ...this.state,
+          show: true,
+        });
+      } else {
+        this.setState({
+          ...this.state,
+          show: false,
+        });
+      }
+    });
+    return () => {
+      window.removeEventListener("scroll");
+    };
+  }
+
   drawerToggleClickHandler = () => {
     this.setState((prevState) => {
       return { sideDrawerOpen: !prevState.sideDrawerOpen };
@@ -31,10 +52,11 @@ class App extends Component {
     return (
       <React.Fragment>
         <header>
-          <Navigation drawerClickHandler={this.drawerToggleClickHandler} />
+          <Navigation drawerClickHandler={this.drawerToggleClickHandler} colorInverse={this.state.show} />
           <SideDrawer
             show={this.state.sideDrawerOpen}
             click={this.backdropClickHandler}
+            colorInverse={this.state.show}
           />
           ;{backdrop}
         </header>
