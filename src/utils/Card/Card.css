@@ -1,9 +1,14 @@
+.card{
+  background-color: var(--primary-color-medium);
+  border-color: var(--primary-color-light) !important;
+}
+
 .card-icons {
   font-size: 2rem;
 }
 
 .exp-cards {
-  border-left: .1rem solid rgba(0, 0, 0, .125);
+  border-left: .1rem solid rgba(255, 255, 255, .125);
   font-size: 1.6rem;
 }
 
@@ -11,9 +16,12 @@
   width: 100%;
   padding-right: 0;
   padding-left: 15%;
+  color: var(--secondary-color);
 }
 .card-title{
   font-size: 2rem;
+  color:var(--primary-color-light);
+  font-weight:bold;
 }
 
 

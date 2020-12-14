@@ -1,3 +1,5 @@
+
+
 .side-drawer {
   height: 100%;
   /* background-color: #0d161d; */
@@ -19,18 +21,17 @@
   -o-transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out;
   transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
-  transition-property: transform,background;
-  transition-duration: .3s,.5s;
+  -webkit-transition-property: background, -webkit-transform;
+  transition-property: background, -webkit-transform;
+  -o-transition-property: transform, background;
+  transition-property: transform, background;
+  transition-property: transform, background, -webkit-transform;
+  -webkit-transition-duration: .3s, .5s;
+  -o-transition-duration: .3s, .5s;
+  transition-duration: .3s, .5s;
 }
 
-.side-drawer_inverse {
-  background: #ffffff;
 
-}
-
-.side-drawer_inverse .link_inverse:link,.link_inverse{
-color: black !important;
-}
 
 .open {
   -webkit-transform: translateX(0);
@@ -47,13 +48,12 @@ color: black !important;
   border: #fff solid .5px;
   border-radius: 2rem;
   width: 75%;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
   transition: all .5s;
 }
 
-.horizontal-line_inverse {
-  border: black solid .5px;
 
-}
 
 .side-drawer ul {
   height: 100%;
@@ -75,30 +75,53 @@ color: black !important;
 }
 
 .side-drawer a {
+  position: relative;
   color: #fff;
   font-size: 2.0rem;
   font-weight: 600;
   text-decoration: none;
-  -webkit-transition: all .5s;
+  /* -webkit-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-bottom: .3rem solid transparent;
-  border-top: .3rem solid transparent;
+  border-top: .3rem solid transparent; */
   padding-bottom: .5rem;
   padding-top: .5rem;
   font-family: 'Rajdhani', sans-serif;
 
 }
 
-.side-drawer a:hover,
+.side-drawer ul li a:before {
+  content: '';
+  width: 0;
+  border-radius: 2px;
+  height: 10%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#00ffff), color-stop(#26fff5), color-stop(#3dffea), color-stop(#50ffde), color-stop(#61ffd3), color-stop(#73ffc6), color-stop(#85ffb8), color-stop(#97ffab), color-stop(#afff9a), color-stop(#c7fe8a), color-stop(#e0fb7c), to(#f9f871));
+  background-image: -o-linear-gradient(left, #00ffff, #26fff5, #3dffea, #50ffde, #61ffd3, #73ffc6, #85ffb8, #97ffab, #afff9a, #c7fe8a, #e0fb7c, #f9f871);
+  background-image: linear-gradient(to right, #00ffff, #26fff5, #3dffea, #50ffde, #61ffd3, #73ffc6, #85ffb8, #97ffab, #afff9a, #c7fe8a, #e0fb7c, #f9f871);
+  -webkit-transition: width .5s;
+  -o-transition: width .5s;
+  transition: width .5s;
+}
+
+.side-drawer ul li a:hover:before,
+.toolbar_navigation-items ul li a:focus:before {
+  width: 100%;
+}
+
+
+/* .side-drawer a:hover,
 .side-drawer a:active {
   border-bottom: 2px solid rgb(0, 153, 255);
   border-top: 2px solid rgb(0, 153, 255);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-}
+} */
 
 @media (max-width:320px) {
   .side-drawer a {

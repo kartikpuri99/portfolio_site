@@ -6,10 +6,10 @@ const MainProgressBar = props => {
   return (
     <div className="Main-Progress-Bar">
       <div className="bar-text">
-        <div className="text-dark font-weight-bold float-left prog-font">
+        <div className="text-white font-weight-bold float-left prog-font">
           {props.name}
         </div>
-        <div className="text-muted font-weight-bold float-right prog-font">
+        <div className="text-white font-weight-bold float-right prog-font">
           {props.percentage} %
         </div>
       </div>

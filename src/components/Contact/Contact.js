@@ -27,7 +27,7 @@ const Contact = () => {
             </div>
             <div className="row justify-content-center mt-4 pt-4">
               <div className="col-lg-6 col-md-12 col-sm-12">
-                <h1 className="text-center mt-4 text-muted lead contact-text mb-4">
+                <h1 className="text-center mt-4 lead contact-text mb-4">
                   Want to know more about me! Just leave a message or contact me
                   on one of the platforms.
                 </h1>
@@ -45,7 +45,7 @@ const Contact = () => {
         <div className="container">
           <div className="row port-footer-container">
             <div className="col-lg-4 col-md-12 col-sm-12 text-muted h3 lead text-center footer-custom-text">
-              © Kartik. Built With ♥ By Kartik.
+              © Kartik. Built With <span style={{color:'red'}}>♥</span> By Kartik.
             </div>
             <div className="col-lg-4 col-md-12 col-sm-12"></div>
             <div className="col-lg-4 col-md-12 col-sm-12">
@@ -78,7 +78,7 @@ const Contact = () => {
                   <a href="https://www.instagram.com/kartik_puri_kp/">
                     <FontAwesomeIcon
                       icon={faInstagram}
-                      className="text-muted h4 mr-2  contact-icons"
+                      className="text-muted h4 mr-2 contact-icons"
                     />
                   </a>
                 </li>

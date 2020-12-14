@@ -1,14 +1,15 @@
 .Experience {
   width: 100%;
-  background-color: #F8F9FA;
+  background-color: var(--primary-color);
   padding-top: 8.5rem;
   padding-bottom: 8.5rem;
   position: relative;
 
 }
 
-.Experience .container {
-  background-color: #F8F9FA;
+
+
+.experience-head {
+  background-color: var(--primary-color);
 
 }
-

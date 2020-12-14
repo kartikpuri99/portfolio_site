@@ -1,0 +1,16 @@
+.lottie-animation-container{
+  width: 100%;
+  z-index: 1000;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+
+.close-animation{
+  opacity: 0;
+  display: none;
+}

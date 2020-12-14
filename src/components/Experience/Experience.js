@@ -36,13 +36,13 @@ const Experience = () => {
             <div className="col-lg-6 col-md-12 col-sm-12">
               <div className="text-center mx-auto">
                 <Heading firstname="Experience" classes="experience-head" />
-                <div className="text-muted pt-4 prog-font">
+                <div className="text-white pt-4 prog-font">
                   My Education and experience till date.
                 </div>
               </div>
             </div>
           </div>
-          <div className="row mt-3 pt-3">
+          <div className="row mt-3 pt-3 ">
             <div className="col-lg-6 col-md-6 col-sm-12">
               {edu.map((edu) => (
                 <Card

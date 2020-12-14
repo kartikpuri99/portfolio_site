@@ -66,9 +66,9 @@ const About = () => {
               <div className="col-lg-12 about-detail text-center mx-auto mt-3">
                 <ul className="mb-0 list-inline text-center about-work">
                   <li className="list-inline-item mr-2 ">ENGINEER</li>
-                  <li className="list-inline-item mr-2 text-muted">--</li>
+                  <li className="list-inline-item mr-2 text-white">--</li>
                   <li className="list-inline-item mr-2 ">DEVELOPER</li>
-                  <li className="list-inline-item mr-2 text-muted">--</li>
+                  <li className="list-inline-item mr-2 text-white">--</li>
                   <li className="list-inline-item mr-0 ">WEB-DESIGNER</li>
                 </ul>
               </div>

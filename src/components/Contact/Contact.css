@@ -1,18 +1,26 @@
+
+
 .Contact {
   width: 100%;
-  padding-top: 7rem;
+  padding-top: 14rem;
   position: relative;
-  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  background-color: var(--primary-color);
+
 }
 
+
+
 .contact-text {
+  color: var(--white);
   font-size: 2.5rem;
 }
 
 .port-footer {
-  margin-top: 6rem;
+  /* padding-top: 6rem; */
   width: 100%;
-  background-color: #F8F9FA;
+  background-color: var(--primary-color-medium);
+
 }
 
 .port-footer-container {
@@ -22,10 +30,6 @@
 
 .footer-custom-text {
   font-size: 1.9rem;
-}
-
-#footer .container {
-  background-color: #F8F9FA;
 }
 
 .contact-icons {
@@ -39,6 +43,7 @@
   -webkit-transform: translateY(-0.2rem) scale(1.5) rotate(360deg);
   -ms-transform: translateY(-0.2rem) scale(1.5) rotate(360deg);
   transform: translateY(-0.2rem) scale(1.5) rotate(360deg);
+  color: var(--secondary-color) !important;
 }
 
 .contact-icons:active {

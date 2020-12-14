@@ -8,30 +8,22 @@ import Contact from "./components/Contact/Contact";
 import Navigation from "./components/Navigation/Navigation";
 import SideDrawer from "./components/Navigation/SideDrawer/SideDrawer";
 import Backdrop from "./components/Navigation/Backdrop/Backdrop";
+import Loading from "./utils/Loading/Loading";
 
 class App extends Component {
   state = {
     sideDrawerOpen: false,
     show: false,
+    lottieanimation: true,
   };
 
   componentDidMount() {
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > 100) {
-        this.setState({
-          ...this.state,
-          show: true,
-        });
-      } else {
-        this.setState({
-          ...this.state,
-          show: false,
-        });
-      }
-    });
-    return () => {
-      window.removeEventListener("scroll");
-    };
+    setTimeout(() => {
+      this.setState({
+        ...this.state,
+        lottieanimation: false,
+      });
+    }, 3000);
   }
 
   drawerToggleClickHandler = () => {
@@ -49,17 +41,20 @@ class App extends Component {
     if (this.state.sideDrawerOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
+
+    if (this.state.lottieanimation) {
+      return <Loading show={this.state.lottieanimation} />;
+    }
     return (
       <React.Fragment>
-        <header>
-          <Navigation drawerClickHandler={this.drawerToggleClickHandler} colorInverse={this.state.show} />
-          <SideDrawer
-            show={this.state.sideDrawerOpen}
-            click={this.backdropClickHandler}
-            colorInverse={this.state.show}
-          />
-          ;{backdrop}
-        </header>
+        <Navigation
+          drawerClickHandler={this.drawerToggleClickHandler}
+        />
+        <SideDrawer
+          show={this.state.sideDrawerOpen}
+          click={this.backdropClickHandler}
+        />
+        ;{backdrop}
         <Home />
         <About />
         <Experience />

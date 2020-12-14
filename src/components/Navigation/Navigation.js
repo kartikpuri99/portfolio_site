@@ -2,13 +2,11 @@ import React from "react";
 import "./Navigation.css";
 import DrawerToggleButton from "../Navigation/SideDrawer/DrawerToggleButton";
 const Navigation = (props) => {
-  
-
   return (
-    <header className={`toolbar ${props.colorInverse && "nav_white"}`}>
+    <header className={`toolbar`}>
       <nav className="toolbar__navigation">
         <div>
-          <DrawerToggleButton click={props.drawerClickHandler} colorInverse={props.colorInverse}/>
+          <DrawerToggleButton click={props.drawerClickHandler} />
         </div>
         <div className="toolbar__logo">
           <a href="#home">
@@ -17,8 +15,10 @@ const Navigation = (props) => {
         </div>
         <div className="spacer"></div>
         <div className="toolbar_navigation-items">
-          <ul className="activelinks">
-            <li className="actives">
+          {/* <ul className="activelinks"> */}
+          {/* <li className="actives"> */}
+          <ul>
+            <li className='actives'>
               <a href="#home">HOME</a>
             </li>
             <li>
