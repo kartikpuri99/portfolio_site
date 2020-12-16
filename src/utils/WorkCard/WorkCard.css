@@ -17,10 +17,9 @@
   -webkit-box-shadow: 0 10px 30px -15px var(--black);
   box-shadow: 0 10px 30px -15px var(--black);
   background: var(--primary-color);
-  /* background: linear-gradient(to right, rgba(13, 6, 32, 0.9), rgba(13, 6, 32, .9)), url(../../assests/1_mLE5ZxhtATxrwh20SL2Tlg.png); */
   background-size: cover;
   background-position: center;
-  color: #A8B2D1;
+  color: var(--grey-light);
 }
 
 
@@ -87,24 +86,24 @@
 
 .work-content {
   margin-left: -100px;
-  color: #A8B2D1;
+  color: var(--grey-light);
   z-index: 3;
 }
 
 .work-content .text-right div:first-child {
-  color: var(--primary-color-light);
+  color: var(--secondary-color);
 }
 
 .work-content-title,
 .work-card-title {
-  color: #A8B2D1;
+  color:var(--grey-light);
   font-size: 4rem;
   font-weight: bold;
 }
 
 .work-content-description {
   background-color: var(--primary-color-medium);
-  color: #A8B2D1;
+  color:var(--grey-light);
   padding: 25px;
   border-radius: 5px;
   -webkit-box-shadow: 0 25px 30px -15px var(--black);
@@ -117,8 +116,25 @@
   margin-right: 15px;
 }
 
+.work-content .tech-names span span,.work-card-tech-names span span{
+  color: var(--secondary-color);
+}
 
+.work-content-link,.work-content-link:link,.work-content-link:active{
+  color: var(--grey-light);
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
 
+.work-content-link span{
+  text-transform: capitalize;
+}
+
+.work-content-link:hover{
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
 @media only screen and (max-width:845px) {
 

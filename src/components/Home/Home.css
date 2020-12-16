@@ -2,7 +2,7 @@
 .home {
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: 93vh;
   background: var(--primary-color);
   background: -webkit-gradient(linear, left top, right top, from(rgba(6, 2, 15, 0.9)), to(rgba(6, 2, 15, .9))), url(../../assests/7038048-purple-dark-smoke.jpg);
   background: -o-linear-gradient(left, rgba(6, 2, 15, 0.9), rgba(6, 2, 15, .9)), url(../../assests/7038048-purple-dark-smoke.jpg);
