@@ -2,38 +2,38 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
 import "./About.css";
-import MainProgressBar from "./MainProgressBar/MainProgressBar";
+// import MainProgressBar from "./MainProgressBar/MainProgressBar";
 import Heading from "../../utils/Heading";
 
-const skillsa = [
-  {
-    name: "HTML and CSS",
-    percentage: 70,
-  },
-  {
-    name: "JavaScript/React",
-    percentage: 80,
-  },
-  {
-    name: "NodeJS",
-    percentage: 60,
-  },
-];
+// const skillsa = [
+//   {
+//     name: "HTML and CSS",
+//     percentage: 70,
+//   },
+//   {
+//     name: "JavaScript/React",
+//     percentage: 80,
+//   },
+//   {
+//     name: "NodeJS",
+//     percentage: 60,
+//   },
+// ];
 
-const skillsb = [
-  {
-    name: "Python",
-    percentage: 60,
-  },
-  {
-    name: "Flutter",
-    percentage: 50,
-  },
-  {
-    name: "C++",
-    percentage: 50,
-  },
-];
+// const skillsb = [
+//   {
+//     name: "Python",
+//     percentage: 60,
+//   },
+//   {
+//     name: "Flutter",
+//     percentage: 50,
+//   },
+//   {
+//     name: "C++",
+//     percentage: 50,
+//   },
+// ];
 
 const About = () => {
   return (
