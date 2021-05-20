@@ -74,6 +74,10 @@
   margin: 1.5rem 0;
 }
 
+.home-icons{
+  color: var(--primary-color-light);
+}
+
 .side-drawer a {
   position: relative;
   color: var(--white);

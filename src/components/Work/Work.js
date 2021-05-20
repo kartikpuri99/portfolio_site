@@ -3,36 +3,45 @@ import { Fade } from "react-reveal";
 import Heading from "../../utils/Heading";
 import "./Work.css";
 import WorkCard from "../../utils/WorkCard/WorkCard";
-import chatApp from "../../assests/slack-chat.JPG";
+import Cowin from "../../assests/Cowin.JPG";
 import DevConnector from "../../assests/DevConnector.JPG";
 import Ecommerce from "../../assests/E-Commerce.JPG";
 import NewsApp from "../../assests/NewsApp.JPG";
+import BookStore from '../../assests/BookStore.JPG'
 
 const Work = () => {
   const workList = [
     {
-      title: "ChatApp",
+      title: "CoWin",
       description:
-        "A slack chat web app clone made using ReactJS and Firebase where developers can create their profile and can then join channels and can chat with each other.",
-      image: chatApp,
-      techlist: ["ReactJS", "Redux", "Firebase"],
-      githubLink: "https://github.com/kartikpuri99/Slack-Chat",
+        "All-in-one COVID App which provides current covid cases around the world, gives daily news related to COVID, and gives the current slot availability of COVID vaccine in your area.",
+      image: Cowin,
+      techlist: ["ReactJS", "NewsAPI", "ChartJS"],
+      githubLink: "https://github.com/kartikpuri99/COVID-19-Tracker",
     },
     {
-      title: "ProShop",
+      title: "Book Store",
       description:
-        "A Ecommerce website made using MERN stack where people from anywhere in the world can buy or sell their products. It has build in authentication along with auto SignIn functionality and paypal api for payment.",
-      image: Ecommerce,
-      techlist: ["ReactJS", "NodeJS", "MongoDB"],
-      githubLink: "https://github.com/kartikpuri99/Ecommerce-Website",
+        "A online book shopping portal which allows a buyer to look for different books from the catalog and can order them online.Also the admin can add new books to the catalog which he wishes to sell.",
+      image: BookStore,
+      techlist: ["ReactJS", "NodeJS","MongoDB"],
+      githubLink: "https://github.com/kartikpuri99/Book_Store",
     },
     {
       title: "DevConnector",
       description:
-        "A place where developers from various fields can check on each others profile as well as can see their github repos and can post something,comment on others post and have to login using their email id.",
+        "A place where developers from various fields can check on each others profile as well as can see their github repos and can post something,comment on others post.",
       image: DevConnector,
       techlist: ["ReactJS", "NodeJS", "MongoDB"],
       githubLink: "https://github.com/kartikpuri99/Developers-Social-Media",
+    },
+    {
+      title: "ProShop",
+      description:
+        "A Ecommerce website made using MERN stack where people from anywhere in the world can buy or sell their products. It has build in authentication along with auto SignIn functionality.",
+      image: Ecommerce,
+      techlist: ["ReactJS", "NodeJS", "MongoDB"],
+      githubLink: "https://github.com/kartikpuri99/Ecommerce-Website",
     },
     {
       title: "News App",
@@ -57,7 +66,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-        
+
           {workList.map((work, index) => (
             <WorkCard
               key={index}
@@ -69,7 +78,7 @@ const Work = () => {
               description={work.description}
             />
           ))}
-        
+
           <div className="row justify-content-center pt-5 text-white">
             For more projects checkout my
             <a

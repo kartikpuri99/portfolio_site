@@ -23,13 +23,13 @@ const Home = () => {
           <div className="col-lg-8 position-relative">
             <Fade cascade right>
               <div className="home-text-container">
-                <div class="row custom-row">Hi!</div>
-                <div class="row custom-row">
+                <div className="row custom-row">Hi!</div>
+                <div className="row custom-row">
                   <div className="home-iams">I am</div>
                   <div className="animationtexts">
                     <Typewriter
                       options={{
-                        strings: ["Kartik.", "Web Developer."],
+                        strings: ["Kartik.", "VLSI Enthusiast.","Web Developer."],
                         autoStart: true,
                         loop: true,
                       }}

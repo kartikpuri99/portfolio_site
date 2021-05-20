@@ -44,18 +44,12 @@ const About = () => {
             <div className="row justify-content-center">
               <div className="col-lg-12">
                 <div className="text-center mx-auto about-title">
-                  {/* <h2 className="background-line">
-                <span className="foreground-line">
-                  <span className="font-weight-bold">About </span>
-                  <span className="font-weight-light">Me</span>
-                </span>
-              </h2> */}
                   <Heading firstname="About" lastname="Me" />
                   <div className="about-maintext">
                     I am an Electronics and Communication Engineering student at
                     Bharati Vidyapeeth's College Of Engineering. A Full Stack
-                    Web developer.I also have interest in machine learning and
-                    data science.Apart from programming you will find me playing
+                    Web developer.I also have interest in frontend VLSI and
+                    verilog .Apart from programming you will find me playing
                     FIFA,listening music and playing football.
                     <span role="img">⚽⚽</span>
                   </div>
@@ -67,13 +61,13 @@ const About = () => {
                 <ul className="mb-0 list-inline text-center about-work">
                   <li className="list-inline-item mr-2 ">ENGINEER</li>
                   <li className="list-inline-item mr-2 text-white">--</li>
-                  <li className="list-inline-item mr-2 ">DEVELOPER</li>
+                  <li className="list-inline-item mr-2 ">VLSI ENTHUSIAST</li>
                   <li className="list-inline-item mr-2 text-white">--</li>
                   <li className="list-inline-item mr-0 ">WEB-DESIGNER</li>
                 </ul>
               </div>
             </div>
-            <div className="row">
+            {/* <div className="row">
               <div className="col-lg-12 text-center mx-auto mt-5 pt-5">
                 <Heading firstname="Skills" />
               </div>
@@ -95,7 +89,7 @@ const About = () => {
                   />
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </Fade>
       </section>

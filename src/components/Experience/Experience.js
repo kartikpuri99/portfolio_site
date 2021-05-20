@@ -21,8 +21,20 @@ const edu = [
 
 const exp = [
   {
+    name: "OpenSource Contributor at GSSOC'21",
+    year: "Feb 2021-Present",
+    text:
+      "Contributing to different opensource projects under the GirlScript Summer Of Code programs.",
+  },
+  {
+    name: "Participated at Eyantra'20-Robotics Competition",
+    year: "Seb'20-Feb'21",
+    text:
+      "Was among the top-10 teams in Eyantra National Robotics Competition under the theme of Sahayak Bot",
+  },
+  {
     name: "Web Administrator at BVPCSI",
-    year: "2020-Present",
+    year: "Aug'20-Present",
     text:
       "Works on regularly updating the website as well as adding new feature to the societies website.",
   },
@@ -37,7 +49,7 @@ const Experience = () => {
               <div className="text-center mx-auto">
                 <Heading firstname="Experience" classes="experience-head" />
                 <div className="text-white pt-4 prog-font">
-                  My Education and experience till date.
+                  My Education and experience/achievement till date.
                 </div>
               </div>
             </div>

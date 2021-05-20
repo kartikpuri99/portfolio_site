@@ -6,7 +6,7 @@ import { faCode } from "@fortawesome/free-solid-svg-icons";
 
 const WorkCard = (props) => {
   return (
-    <Fade bottom cascade>
+    <Fade bottom cascade> 
       <div className="row work-main">
         <div className="col-12 work-main__3">
           <div
@@ -53,7 +53,7 @@ const WorkCard = (props) => {
             <div className="mt-2 text-right">
               <a href={props.githubLink} className="work-content-link">
                 <FontAwesomeIcon icon={faCode} />
-                <span className="ml-2">Project Link</span>
+                {/* <span className="ml-2">Project Link</span> */}
               </a>
             </div>
           </div>
